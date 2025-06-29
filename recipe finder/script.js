@@ -1,10 +1,10 @@
-const apiKey = '537df46f238149e0be317a721e40a9cb';
+const apiKey = 'api key';
 
 async function findRecipes() {
   const ingredient = document.getElementById('ingredientInput').value;
   const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&number=3&apiKey=${apiKey}`);
   const recipes = await response.json();
-  //const cuisine = document.getElementById('cuisineSelect').value;
+  //const cuisine = document.getElementById('cuisineSelect').value;537df46f238149e0be317a721e40a9cb
 //const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${ingredient}&cuisine=${cuisine}&number=3&apiKey=${apiKey}`);
 
   
